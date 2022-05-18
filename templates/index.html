@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Cabeça/Head: Configurações da página.-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo da página que aparece na aba.-->
     <title>Hello World</title>
+
+    <!--Isso é um estilo. (Controla os visuais da página, estilos são escritos em CSS.)-->
+    <style>
+      .mydiv {
+          border: 5px outset rgb(205, 223, 230);
+          background-color: lightblue;
+          text-align: center;
+      }
+    </style>
+
 </head>
+
+<!--Corpo/Body: Conteudo da página.-->
 <body>
-    <h1>Hello World!</h1>
-    <hr>
-    <p>Testando Flask...</p>
+    
+    <!--Div: Conteudos nessa tag serão estilisados pelo CSS.-->
+    <div class="mydiv">
+        <h1>Login</h1>
+
+        <!--Form: Cria um formulário para o usuário preencher.-->
+        <form action="#" method="post">
+            <h2></h2>Username:<br>
+    
+            <input type="text" name="Username"><br>
+            Password:<br>
+            <input type="password" name="Password">
+            
+            <!--Br: Tag que quebra a linha. (Similar ao \n no Python.)-->
+            <br>
+            <br>
+    
+        <input type="submit" value="Login">
+        </form>
+    </div>
+
 </body>
 </html>
