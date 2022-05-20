@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <!--Cabeça/Head: Configurações da página.-->
 <head>
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Titulo da página que aparece na aba.-->
-    <title>Test</title>
+    <title>Perfil</title>
 
     <!--Link: para connectar o html ao css.-->
     <link rel="stylesheet" href="static/test.css">
@@ -20,13 +20,15 @@
 
     <!--Div: Conteudos nessa tag serão estilisados pelo CSS.-->
     <div class="center">
-        <h1>Test</h1>
+        <h1 class="title">Perfil de {{g.user.username}}</h1>
         <br>
 
-        <h2>Login Successful</h2>
+        <h2 class="subtitle">Logado com sucesso</h2>
         <br>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat voluptatem maxime earum nisi beatae repudiandae quod minima molestias, esse tempore est ipsam sed reprehenderit sapiente dicta dolor! Commodi, pariatur.</p>
+        <p>Nome de usuário: {{g.user.username}}</p>
+        <p>Senha: {{g.user.password}}</p>
+        <p>Id: {{g.user.id}}</p>
     </div>
 
 </body>
